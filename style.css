@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 375px;
+    height: 709px;
+    font-family:'Red Hat Display' ;
+    display: flex;
+    align-items: center;
+    background-color: #E0E8FF;
+    justify-content: center;
+
+    overflow: hidden;
+    background-image: url('images/pattern-background-mobile.svg');
+    background-position: start;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 327px;
+    height: 567px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+.hero{
+    width: 100%;
+    
+}
+.info{
+    width: 100%;
+    text-align: center;
+}
+.info h1{
+    width: 263px;
+    height: 29px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #1F2E55;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+.info p{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    text-align: center;
+
+    color: #717FA6;
+    margin-top: 16px;
+}
+.annual-Plan{
+    width: 279px;
+    height: 81px;
+    border-radius: 11px;
+    background-color: #F7F9FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+}
+.annual-Plan img{
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+}
+.annual-Plan h2{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #1F2E55;
+    margin-left: -30px;
+}
+.annual-Plan span{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #717FA6;
+}
+.annual-Plan a{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-decoration-line: underline;
+
+    color: #382AE1;
+    margin-right: 16px;
+}
+.buttons{
+    width: 327px;
+    height: 150px;
+
+}
+.buttons .pay{
+    width: 279px;
+    height: 50px;
+    color: white;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    border: none;
+    margin-left: 24px;
+    margin-top: 24px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+.buttons .cancel{
+    width: 96px;
+    height: 20px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #717FA6;
+    border: none;
+    background: transparent;
+    margin-left: 115px;
+    margin-top: 24px;
+}
+
+@media only screen and (min-width:500px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url("images/pattern-background-desktop.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100% 437px ;
+        
+    }
+    .container{
+        width: 450px;
+        height: 697px;
+    }
+    .container h1{
+        width: 354px;
+        height: 37px;
+        margin-left: 40px;
+    }
+    .container p{
+        width: 354px;
+        height: 78px;
+        line-height: 26px;
+        font-size: 16px;
+        margin-left: 40px;
+    }
+    .annual-Plan{
+        width: 354px;
+        height: 98px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .annual-Plan h2{
+        font-family: 'Red Hat Display';
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 21px;
+        margin-left: -25%;
+
+    }
+    .annual-Plan span{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .annual-Plan a{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 39px;
+    }
+    .buttons {
+        width: 354px;
+        height: 120px;
+        margin-left: 40px;
+    }
+    .buttons .pay{
+        width: 354px;
+        height: 50px;
+        margin-left: 1px;
+    }   
+    .buttons .cancel{
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+    /* hover effects */
+    .annual-Plan a:hover{
+        color: #766CF1;
+        text-decoration: none;
+    }
+    .buttons .pay:hover{
+        background: #766CF1;
+    }
+    .buttons .cancel:hover{
+        color: black;
+    }
+}
